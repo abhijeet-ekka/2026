@@ -8,7 +8,7 @@ function ran(n){
     let a = Math.floor(Math.random() * n);
     arr.push(a);
    }
-   console.log(arr);
+   console.log(arr.join("-"));
 }
 
 ran(10);
