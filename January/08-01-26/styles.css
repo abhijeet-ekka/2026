@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.planets{
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    margin-left: 20px;
+
+}
+
+button{
+    font-size: 1.3rem;
+    padding: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.195);
+}
+
+button:focus{
+    border-bottom: 2px solid blue;
+}
+
+p{
+    width: 80%;
+    padding: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.206);
+    margin: auto 0;
+}
