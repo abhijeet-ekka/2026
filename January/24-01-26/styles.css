@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: rgb(25, 24, 43);
+    color: white;
+}
+
+h1{
+    text-align: center;
+    padding: 10px;
+    font-size: 3em;
+}
+
+.cantiner{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input{
+    background-color: white;
+    gap: 10px;
+    color: black;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    border: 2px solid black;
+    width: 500px;
+    height: 130px;
+}
+
+#word{
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+span{
+    font-style: italic;
+}
+
+
+button{
+    background-color: rgb(63, 63, 168);
+    color: white;
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgb(99, 99, 241);
+}
+
+.instructions{
+    background-color: rgba(0, 128, 0, 0.518);
+    width: 500px;
+    height: auto;
+    border-radius: 20px;
+    padding: 30px;
+    font-size: 1.4rem;
+    text-align: center;
+
+}
