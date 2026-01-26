@@ -17,6 +17,7 @@ h1{
 }
 
 .cantiner{
+    position: relative;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -80,7 +81,14 @@ button:hover{
     height: auto;
     border-radius: 20px;
     padding: 30px;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     text-align: center;
 
+}
+
+footer{
+    position: absolute;
+    bottom: 140px;
+    left: 48%;
+    z-index: 1;
 }

@@ -7,5 +7,9 @@ console.log(regex);
 btn.addEventListener("click", () =>{
     if(input.value === ""){
         alert("Please input a value");
+         result.textContent = "";
+    }else {
+        result.textContent = `${input.value}`;
+        input.value = "";
     }
 })
