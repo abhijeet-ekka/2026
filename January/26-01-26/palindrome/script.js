@@ -1,15 +1,23 @@
-const input = document.querySelector("#word");
-const btn = document.querySelector("button");
-const result = document.querySelector(".para")
-const str = input.value;
-const regex = //ig;
-console.log(regex);
-btn.addEventListener("click", () =>{
+const input = document.getElementById("text-input");
+const btn = document.getElementById("check-btn");
+const result = document.getElementById("result");
+const clnRegex = /[^a-z0-9]/gi;
+
+btn.addEventListener("click", palindrome)
+
+function palindrome(){
+    const cleanStr = input.value.replace(clnRegex, "").toLowerCase();
+    const revStr = cleanStr.split("").reverse().join("");
+    console.log(revStr); 
+ 
     if(input.value === ""){
-        alert("Please input a value");
-         result.textContent = "";
-    }else {
-        result.textContent = `${input.value}`;
-        input.value = "";
-    }
-})
+        alert("Please give input")
+    }else if(revStr === cleanStr){
+        result.textContent = `${input.value} is Palindrome`;
+    } else {result.textContent = `${input.value} is not Palindrome`;}
+
+
+
+    
+    
+}

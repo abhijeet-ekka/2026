@@ -3,8 +3,10 @@ const btn = document.querySelector("#btn");
 const result = document.querySelector(".result");
 const plsRegex = /please help|assist/i;
 
+const denyList = [plsRegex];
+
 function isSpam(msg){
-    return plsRegex.test(msg)
+    return denyList.some((regex) => regex.test(msg))
 }
 
 console.log(isSpam(msgInput.value));
