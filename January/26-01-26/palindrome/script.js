@@ -2,7 +2,7 @@ const input = document.querySelector("#word");
 const btn = document.querySelector("button");
 const result = document.querySelector(".para")
 const str = input.value;
-const regex = /input.value/ig;
+const regex = //ig;
 console.log(regex);
 btn.addEventListener("click", () =>{
     if(input.value === ""){
