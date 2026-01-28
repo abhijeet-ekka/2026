@@ -1,0 +1,1 @@
+const chkBox1 = document.querySelector("chk-box1");
