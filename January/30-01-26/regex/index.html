@@ -11,10 +11,14 @@
 
     <div class="container">
         <h1>Sign Up</h1>
-        <input type="text" id="user-name" placeholder="User Name" required>
+        <input type="text" id="user-name" placeholder="User Name" maxlength="12" required>
+        <p id="userP">Username must be  and contain 5 - 12 characters</p>
         <input type="email" id="email" placeholder="email" required>
+        <p>Email must be a valid address, e.g. me@mydomain.com</p>
         <input type="password" id="password" placeholder="Enter password" required>
+         <p>Password must alphanumeric (@, _ and - are also allowed) and be 8 - 20 characters</p>
         <input type="text" id="number" placeholder="Enter Phone number" required>
+         <p>Telephone must be a valid UK telephone number (11 digits)</p>
     </div>
    
 
